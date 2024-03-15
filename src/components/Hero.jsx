@@ -9,15 +9,15 @@ import {
 
 const Hero = () => {
   return (
-    <section className="dark:bg-primary bg-slate-100 px-5 text-white py-32">
+    <section className="dark:bg-primaryDark bg-primaryLight px-5  py-32">
       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
         <div className="hero-info pb-5 md:pb-0">
-          <h1 className="font-pacifico text-4xl lg:text-6xl dark:text-white text-black lg:leading-normal">
+          <h1 className="font-pacifico text-4xl lg:text-6xl dark:text-white text-primaryDark lg:leading-normal">
             Hi, <br />I am <span className="text-accent">O</span>rlando <br />
             Frontend Developer
           </h1>
 
-          <p className="py-5 text-black dark:text-white">
+          <p className="py-5 text-black dark:text-primaryLight">
             I am proficient in JavaScript, React.js and Tailwind CSS
           </p>
 
@@ -47,7 +47,7 @@ const Hero = () => {
 
           <a
             href="/#projects"
-            className=" btn bg-accent  border-2 border-[#7477FF] text-black hover:text-white  px-6 py-3 hover:bg-transparent"
+            className=" btn bg-accent  border-2 border-accent text-black hover:text-white  px-6 py-3 hover:bg-transparent"
           >
             See Projects
           </a>

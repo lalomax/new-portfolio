@@ -7,14 +7,14 @@ export default {
       fontFamily: {
         pacifico : ["pacifico"],
       },
-      backgroundColor: {
-        primary: "#0F172A",
-        secondary: "#1E293B",
-        accent: "#7477FF",
+      colors: {
+        "primaryDark": "#0F172A",
+        "secondaryDark": "#1E293B",
+        "accent": "#7477FF",
+        "primaryLight": "#F1F5F9",
+        "secondaryLight": "#E2E8F0"
       },
-      textColor: {
-        accent: "#7477FF",
-      },
+      
     },
   },
   plugins: [],
