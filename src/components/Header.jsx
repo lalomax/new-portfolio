@@ -1,15 +1,37 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
-  const [toggle, setToggle] = useState(false);
+  const [theme, setTheme] = useState(null);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
-  const handleToggle = () => setToggle(!toggle);
+  useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  }, []);
+
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  console.log(theme)
+  const handleToggleMenu = () => setToggleMenu(!toggleMenu);
 
   return (
-    <header className="flex justify-between px-5 py-2 bg-primary text-white fixed w-full z-10">
+    <header className="flex justify-between px-5 py-2 bg-slate-200 dark:bg-primary text-slate dark:text-white fixed w-full z-10">
       <a href="/" className="logo text-2xl font-bold text-accent">
-        Amrin
+        Orlando
       </a>
 
       {/* Desktop Nav */}
@@ -32,12 +54,23 @@ const Header = () => {
               Resume
             </a>
           </li>
+          <li>
+            <button
+              type="button"
+              onClick={handleThemeSwitch}
+              className="  dark:bg-primary bg-slate-200 text-lg p-1 m-4 rounded-md"
+            >
+              {theme === "dark" ? "🌙" : "🌞"}
+            </button>
+          </li>
         </ul>
       </nav>
 
       {/* Mobile Nav */}
       <nav
-        className={!toggle ? "mobile-nav left-[-100%]" : "mobile-nav left-0"}
+        className={
+          !toggleMenu ? "mobile-nav left-[-100%]" : "mobile-nav left-0"
+        }
       >
         <ul className="flex flex-col">
           <li>
@@ -55,12 +88,25 @@ const Header = () => {
           <li>
             <a href="/#resume">Resume</a>
           </li>
+          <li>
+            <button
+              type="button"
+              onClick={handleThemeSwitch}
+              className="  bg-indigo-500 text-lg p-1 m-4 rounded-md"
+            >
+              {theme === "dark" ? "🌙" : "🌞"}
+            </button>
+          </li>
         </ul>
       </nav>
 
       {/* Toggle button */}
-      <button onClick={handleToggle} className="block md:hidden">
-        {!toggle ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
+      <button onClick={handleToggleMenu} className="block md:hidden">
+        {!toggleMenu ? (
+          <AiOutlineMenu size={30} />
+        ) : (
+          <AiOutlineClose size={30} />
+        )}
       </button>
     </header>
   );

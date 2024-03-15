@@ -72,7 +72,7 @@ const Projects = () => {
                   </a>
                   <a
                     href={project.code}
-                    className="px-5 py-2 bg-blue-700 hover:bg-blue-800 font-bold"
+                    className="px-5 py-2 bg-blue-500 hover:bg-blue-800 font-bold"
                   >
                     Code
                   </a>
