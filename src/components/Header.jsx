@@ -25,11 +25,11 @@ const Header = () => {
     }
   }, [theme]);
 
-  console.log(theme)
+  console.log(theme);
   const handleToggleMenu = () => setToggleMenu(!toggleMenu);
 
   return (
-    <header className="flex justify-between px-5 py-2 bg-primaryLight dark:bg-primaryDark text-slate dark:text-white fixed w-full z-10">
+    <header className="flex justify-between px-5 py-2 bg-primaryDark text-slate text-white fixed w-full z-10">
       <a href="/" className="logo text-2xl font-bold text-accent">
         Orlando
       </a>
@@ -58,7 +58,7 @@ const Header = () => {
             <button
               type="button"
               onClick={handleThemeSwitch}
-              className="  dark:bg-primaryDark bg-primaryLight text-lg p-1 m-4 rounded-md"
+              className="bg-primaryDark text-lg p-1 rounded-md"
             >
               {theme === "dark" ? "🌙" : "🌞"}
             </button>
@@ -92,7 +92,7 @@ const Header = () => {
             <button
               type="button"
               onClick={handleThemeSwitch}
-              className="  dark:bg-primaryDark bg-primaryLight text-lg p-1 m-4 rounded-md"
+              className="bg-primaryDark text-lg p-4 rounded-md"
             >
               {theme === "dark" ? "🌙" : "🌞"}
             </button>
