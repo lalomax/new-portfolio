@@ -1,0 +1,79 @@
+{
+    "name": "Orlando",
+    "firstname": "Flores",
+    "urlphoto": "https://avatars.githubusercontent.com/u/95863162?v=4",
+    "title": "Frontend Developer",
+    "about": "Experience working with teams to produce impactful, cutting-edge websites that engage customers and deliver business results. Good understanding of design standards and user preferences.",
+    "skills": {
+      "JavaScript": "9",
+      "HTML/CSS": "9",
+      "React": "8",
+      "Tailwindcss": "7",
+      "React Native": "6",
+      "SCRUM" : "6",
+      "TypeScript": "5"
+    },
+    "languages" : {
+      "Spanish":"9",
+      "English":"7",
+      "Aymara":"5",
+      "portuguese" : "4"
+    },
+    "experience": [
+      {
+        "Role": "Frontend Developer",
+        "Company": "No-country",
+        "time": "Nov. 2022 - Aug. 2023",
+        "descriptions": [
+          "Collaboration with SCRUM team during development processes to confirm creative proposals and design best practices.",
+          "Designing and updating designs to meet usability and performance requirements.",
+          "Performing user experience quality assurance testing to identify and address deficiencies.",
+          "Coordination with the digital content manager to obtain content for updates and enhancements."
+        ]
+      },
+      {
+        "Role": "Director",
+        "Company": "CDI-BO-423",
+        "time": "Jan. 2018 - Dec. 2018",
+        "descriptions": [
+          "Monitored operations and provided corrective feedback to achieve daily and long-term goals.",
+          "Managed daily operations while overseeing multiple locations to foster increased productivity.",
+          "Collaborated closely with organizational leadership and board of directors to guide operational strategy.",
+          "Oversaw office workflow and administrative processes to maintain smooth operations.",
+          "Evaluated company documentation for compliance with regulatory requirements.",
+          "Supervision and coordination of workflows to optimize resources."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "name": "Public University of El Alto",
+        "location": "El Alto, Bolivia",
+        "degree": "Systems Engineer",
+        "time": "2010 - 2020",
+        "descriptions": [
+          "He has completed professional development in Reliability Measurement based on cyclomatic complexity of procedural stream in node.js and black box testing.",
+          "Elected as Executive Secretary of the Student Center (a.i.) for the Systems Engineering course in 2013.",
+          "Elected as President of the electoral committee for the election of the student center for the Systems Engineering career in 2013."
+        ]
+      },
+      {
+        "name": "Integrated Centre 12 October",
+        "location": "El Alto, Bolivia",
+        "degree": "Skilled work on Radio and Television",
+        "time": "1985 - 1987",
+        "descriptions": [
+        "Small Electronic projects"
+        ]
+      },
+      {
+        "name": "Berlin Professional Academic Institute",
+        "location": "El Alto, Bolivia",
+        "degree": "Systems analyst",
+        "time": "1995 - 1998",
+        "descriptions": [
+        
+        ]
+      }
+    ]
+  }

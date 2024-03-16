@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import AboutImg from "../assets/about-img.png";
 
@@ -26,6 +27,12 @@ const About = () => {
             In my spare time I create YouTube videos and write blogs on my Blog.
             Where I talk about programming theory and build various projects.
           </p>
+          <Link
+            to="/curriculum"
+            className="inline-block btn bg-accent  border-2 border-accent text-black hover:text-white  px-6 py-3 my-4 hover:bg-primaryDark"
+          >
+            Resume
+          </Link>
         </div>
 
         <div className="about-img">
