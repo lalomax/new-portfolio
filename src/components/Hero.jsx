@@ -47,7 +47,7 @@ const Hero = () => {
 
           <a
             href="/#projects"
-            className=" btn bg-accent  border-2 border-accent text-black hover:text-white  px-6 py-3 hover:bg-transparent"
+            className=" btn bg-accent  border-2 border-accent text-black hover:text-white  px-6 py-3 hover:bg-primaryDark"
           >
             See Projects
           </a>

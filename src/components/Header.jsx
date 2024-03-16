@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
@@ -44,15 +45,12 @@ const Header = () => {
             <a href="/#projects">Projects</a>
           </li>
           <li>
-            <a href="/#blog">Blog</a>
           </li>
           <li>
             <a href="/#contact">Contact</a>
           </li>
           <li>
-            <a href="#resume -link" target="_blank" without rel="noreferrer">
-              Resume
-            </a>
+            <Link to="/curriculum">Resume</Link>
           </li>
           <li>
             <button
@@ -80,13 +78,10 @@ const Header = () => {
             <a href="/#projects">Projects</a>
           </li>
           <li>
-            <a href="/#blog">Blog</a>
-          </li>
-          <li>
             <a href="/#contact">Contact</a>
           </li>
           <li>
-            <a href="/#resume">Resume</a>
+            <Link to="/curriculum">Resume</Link>
           </li>
           <li>
             <button
