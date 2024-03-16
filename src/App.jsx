@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import BlogArchive from "./pages/BlogArchive";
+import Curriculum from "./pages/Curriculum";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<BlogArchive />} />
+        <Route path="/curriculum" element={<Curriculum />} />
       </Routes>
 
       <Footer />
