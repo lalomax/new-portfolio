@@ -21,17 +21,13 @@ function Curriculum() {
                   <p class="text-secondaryDark dark:text-secondaryLight ">{data.title}</p>
                   <div class="mt-6 flex flex-wrap gap-4 justify-center">
                     <a
-                      href="#"
+                      href="https://drive.google.com/file/d/1o2oOyqgRIoAvrSlCks5KXhiaLFbN4HXs/view?usp=sharing"
                       class="btn bg-accent  border-2 border-accent text-black hover:text-white  px-6 py-3 hover:bg-primaryDark"
+                      target="_blank"
                     >
-                      Contact
+                      Download Pdf
                     </a>
-                    <a
-                      href="#"
-                      class="btn bg-accent  border-2 border-accent text-black hover:text-white  px-6 py-3 hover:bg-primaryDark"
-                    >
-                      Resume
-                    </a>
+                    
                   </div>
                 </div>
                 <hr class="my-6 border-t border-gray-300" />
