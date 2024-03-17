@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
@@ -31,23 +32,21 @@ const Header = () => {
 
   return (
     <header className="flex justify-between px-5 py-2 bg-primaryDark text-slate text-white fixed w-full z-10">
-      <a href="/" className="logo text-2xl font-bold text-accent">
+      <Link to="/" className="logo text-2xl font-bold text-accent">
         Lalomax
-      </a>
+      </Link>
 
       {/* Desktop Nav */}
       <nav className="hidden md:block">
         <ul className="flex">
           <li>
-            <a href="/#about">About</a>
+            <Link to="/#about">About</Link>
           </li>
           <li>
-            <a href="/#projects">Projects</a>
+            <Link to="/#projects">Projects</Link>
           </li>
           <li>
-          </li>
-          <li>
-            <a href="/#contact">Contact</a>
+            <Link to="/#contact">Contact</Link>
           </li>
           <li>
             <Link to="/curriculum">Resume</Link>
@@ -72,13 +71,13 @@ const Header = () => {
       >
         <ul className="flex flex-col">
           <li>
-            <a href="/#about">About</a>
+            <Link to="/#about">About</Link>
           </li>
           <li>
-            <a href="/#projects">Projects</a>
+            <Link to="/#projects">Projects</Link>
           </li>
           <li>
-            <a href="/#contact">Contact</a>
+            <Link to="/#contact">Contact</Link>
           </li>
           <li>
             <Link to="/curriculum">Resume</Link>
