@@ -79,7 +79,7 @@ function Curriculum() {
             </div>
             {/* Second column */}
             <div class="col-span-4 sm:col-span-9 grid gap-6">
-              <div class="dark:bg-primaryDark bg-secondaryLight shadow rounded-lg p-6">
+              <div class="dark:bg-primaryDark bg-secondaryLight shadow rounded-lg p-6" id="cvheader">
                 {/* Header */}
                 <h2 class="text-xl font-bold mb-4">About Me</h2>
                 <p class="">{data.about} </p>

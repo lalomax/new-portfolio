@@ -12,16 +12,16 @@ const About = () => {
           </h2>
 
           <p className="pb-5">
-            Hi, My Name Is Rohima Akther everyone calls me Amrin. I am a
+            Hi, my name is Orlando Flores everyone calls me Orlando. I am a
             Frontend Developer. I build beautifull websites with React and
-            Tailwind CSS.
+            Tailwind CSS and other technologies.
           </p>
           <p className="pb-5">
             I am proficient in Frontend skills like React.js, Redux, Redux Tool
-            Kit, Axios, Tailwind CSS, SaSS, Css3 and many more.
+            Kit, Axios, Tailwind CSS, Css3 and many more.
           </p>
 
-          <p>In backend I know Node.js, Express.js, MongoDB, and Mongoose</p>
+          {/* <p>In backend I know Node.js, Express.js, MongoDB, and Mongoose</p> */}
 
           <p>
             In my spare time I create YouTube videos and write blogs on my Blog.
