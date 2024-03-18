@@ -49,7 +49,7 @@ const Header = () => {
             <Link to="/#contact">Contact</Link>
           </li>
           <li>
-            <Link to="/curriculum">Resume</Link>
+            <Link to="/curriculum/#cvheader">Resume</Link>
           </li>
           <li>
             <button
