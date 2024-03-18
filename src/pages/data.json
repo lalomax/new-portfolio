@@ -5,19 +5,19 @@
     "title": "Frontend Developer",
     "about": "Experience working with teams to produce impactful, cutting-edge websites that engage customers and deliver business results. Good understanding of design standards and user preferences.",
     "skills": {
-      "JavaScript": "9",
-      "HTML/CSS": "9",
-      "React": "8",
-      "Tailwindcss": "7",
-      "React Native": "6",
-      "SCRUM" : "6",
-      "TypeScript": "5"
+      "JavaScript": 90,
+      "HTML/CSS": 90,
+      "React": 80,
+      "Tailwindcss": 70,
+      "React Native": 60,
+      "SCRUM" : 60,
+      "TypeScript": 50
     },
     "languages" : {
-      "Spanish":"9",
-      "English":"7",
-      "Aymara":"5",
-      "portuguese" : "4"
+      "Spanish":"90",
+      "English":"70",
+      "Aymara":"50",
+      "Portuguese" : "40"
     },
     "experience": [
       {
