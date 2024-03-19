@@ -5,9 +5,24 @@ import {
   AiOutlineTwitter,
   AiOutlineFacebook,
   AiFillGithub,
-  AiOutlineLinkedin
+  AiOutlineLinkedin,
 } from "react-icons/ai";
 
+const icons = [
+  {
+    link: "https://twitter.com/OrlandoFloresH",
+    icon: <AiOutlineTwitter size={40} />,
+  },
+  {
+    link: "https://www.facebook.com/OrlandoFloresHuanca",
+    icon: <AiOutlineFacebook size={40} />,
+  },
+  { link: "https://github.com/lalomax", icon: <AiFillGithub size={40} /> },
+  {
+    link: "https://www.linkedin.com/in/orlando-flores365/",
+    icon: <AiOutlineLinkedin size={40} />,
+  },
+];
 
 const Hero = () => {
   return (
@@ -24,34 +39,17 @@ const Hero = () => {
           </p>
 
           <div className="flex py-5 gap-2 ">
-            <a
-              href="https://twitter.com/OrlandoFloresH"
-              className="inline-block text-accent hover:text-white"
-            >
-              <AiOutlineTwitter size={40} />
-            </a>
-            
-            <a
-              href="https://www.facebook.com/OrlandoFloresHuanca"
-              className="inline-block text-accent hover:text-white"
-            >
-              {" "}
-              <AiOutlineFacebook size={40} />{" "}
-            </a>
-            <a
-              href="https://github.com/lalomax"
-              className="inline-block text-accent hover:text-white"
-            >
-              {" "}
-              <AiFillGithub size={40} />{" "}
-            </a>
-            <a
-              href="https://www.linkedin.com/in/orlando-flores365/"
-              className="inline-block text-accent hover:text-white"
-            >
-              {" "}
-              <AiOutlineLinkedin size={40} />{" "}
-            </a>
+            {/* Display array icons */}
+            {icons.map(({ link, icon }) => (
+              <a
+                href={link}
+                className="inline-block text-accent hover:text-white"
+                target="_blank"
+              >
+                {icon}
+              </a>
+            ))}
+    
           </div>
 
           <a
