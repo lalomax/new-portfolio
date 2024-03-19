@@ -3,9 +3,11 @@ import HeroImg from "../assets/hero-img.png";
 
 import {
   AiOutlineTwitter,
-  AiOutlineYoutube,
   AiOutlineFacebook,
+  AiFillGithub,
+  AiOutlineLinkedin
 } from "react-icons/ai";
+
 
 const Hero = () => {
   return (
@@ -21,27 +23,34 @@ const Hero = () => {
             Proficient in JavaScript, React.js and Tailwind CSS
           </p>
 
-          <div className="flex py-5 ">
+          <div className="flex py-5 gap-2 ">
             <a
-              href="https://twitter.com/CoderAmrin"
-              className="pr-4 inline-block text-accent hover:text-white"
+              href="https://twitter.com/OrlandoFloresH"
+              className="inline-block text-accent hover:text-white"
             >
-              {" "}
-              <AiOutlineTwitter size={40} />{" "}
+              <AiOutlineTwitter size={40} />
             </a>
+            
             <a
-              href="https://www.youtube.com/@coderamrin"
-              className="pr-4 inline-block text-accent hover:text-white"
-            >
-              {" "}
-              <AiOutlineYoutube size={40} />{" "}
-            </a>
-            <a
-              href="https://www.facebook.com/CoderAmrin/"
-              className="pr-4 inline-block text-accent hover:text-white"
+              href="https://www.facebook.com/OrlandoFloresHuanca"
+              className="inline-block text-accent hover:text-white"
             >
               {" "}
               <AiOutlineFacebook size={40} />{" "}
+            </a>
+            <a
+              href="https://github.com/lalomax"
+              className="inline-block text-accent hover:text-white"
+            >
+              {" "}
+              <AiFillGithub size={40} />{" "}
+            </a>
+            <a
+              href="https://www.linkedin.com/in/orlando-flores365/"
+              className="inline-block text-accent hover:text-white"
+            >
+              {" "}
+              <AiOutlineLinkedin size={40} />{" "}
             </a>
           </div>
 
