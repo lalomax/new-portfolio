@@ -18,14 +18,13 @@ const About = () => {
           </p>
           <p className="pb-5">
             I am proficient in Frontend skills like React.js, Redux, Redux Tool
-            Kit, Axios, Tailwind CSS, Css3 and many more.
+            Kit, Axios, Tailwindcss, and many more.
           </p>
 
           {/* <p>In backend I know Node.js, Express.js, MongoDB, and Mongoose</p> */}
 
           <p>
-            In my spare time I create YouTube videos and write blogs on my Blog.
-            Where I talk about programming theory and build various projects.
+            In my spare time I create anki <a href="https://ankiweb.net/shared/by-author/478793435" target="_blank" className="underline">flashcards</a> about different topics about languages and programming.
           </p>
           <Link
             to="/curriculum"
