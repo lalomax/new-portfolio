@@ -17,7 +17,7 @@ const About = () => {
             Tailwind CSS and other technologies.
           </p>
           <p className="pb-5">
-            I am proficient in Frontend skills like React.js, Redux, Redux Tool
+            I'm proficient in Frontend skills like React.js, Redux, Redux Tool
             Kit, Axios, Tailwindcss, and many more.
           </p>
 
