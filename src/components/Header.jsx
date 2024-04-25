@@ -17,6 +17,7 @@ const Header = () => {
 
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
+    handleToggleMenu();
   };
 
   useEffect(() => {
@@ -71,16 +72,16 @@ const Header = () => {
       >
         <ul className="flex flex-col">
           <li>
-            <Link to="/#about">About</Link>
+            <Link onClick={handleToggleMenu} to="/#about">About</Link>
           </li>
           <li>
-            <Link to="/#projects">Projects</Link>
+            <Link onClick={handleToggleMenu} to="/#projects">Projects</Link>
           </li>
           <li>
-            <Link to="/#contact">Contact</Link>
+            <Link onClick={handleToggleMenu} to="/#contact">Contact</Link>
           </li>
           <li>
-            <Link to="/curriculum">Resume</Link>
+            <Link onClick={handleToggleMenu} to="/curriculum">Resume</Link>
           </li>
           <li>
             <button
