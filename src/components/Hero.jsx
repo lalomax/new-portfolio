@@ -30,7 +30,7 @@ const Hero = () => {
       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
         <div className="hero-info pb-5 md:pb-0">
           <h1 className="font-pacifico text-4xl lg:text-6xl dark:text-white text-primaryDark lg:leading-normal">
-            Hi, <br />I am <span className="text-accent">O</span>rlando <br />
+            Hi, <br />I'm <span className="text-accent">O</span>rlando <br />
             Frontend Developer
           </h1>
 
