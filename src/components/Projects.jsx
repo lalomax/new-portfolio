@@ -2,9 +2,9 @@ import React from "react";
 import jobtrackr from "../assets/jobtrackr.png";
 import contrata from "../assets/contrata.jpg";
 import movement from "../assets/movement.jpg";
-import zepellin from "../assets/zepellin.png";
+// import zepellin from "../assets/zepellin.png";
 // import roundpeople from "../assets/roundpeople.png";
-import pawsitive from "../assets/pawsitive.webp"
+// import pawsitive from "../assets/pawsitive.webp"
 
 const Projects = () => {
   const projects = [
@@ -15,20 +15,20 @@ const Projects = () => {
       live: "https://14-jobtrackr.vercel.app",
       code: "https://github.com/No-Country/s14-01-m-node-react/tree/main",
     },
-    {
-      img: zepellin,
-      title: "Zepellin",
-      desc: "Sportswear trade and social support.",
-      live: "https://zepellin.netlify.app/",
-      code: "https://github.com/No-Country/s8-04-m-node-react-xepelin",
-    },
-    {
-      img: pawsitive,
-      title: "pawsitive",
-      desc: "Take care virtual pets.",
-      live: "https://expo.dev/artifacts/eas/kyevpALYMkfMGKYW2zoDUx.apk",
-      code: "https://github.com/No-Country/s7-27-m-desafioreactnative",
-    },
+    // {
+    //   img: zepellin,
+    //   title: "Zepellin",
+    //   desc: "Sportswear trade and social support.",
+    //   live: "https://zepellin.netlify.app/",
+    //   code: "https://github.com/No-Country/s8-04-m-node-react-xepelin",
+    // },
+    // {
+    //   img: pawsitive,
+    //   title: "pawsitive",
+    //   desc: "Take care virtual pets.",
+    //   live: "https://expo.dev/artifacts/eas/kyevpALYMkfMGKYW2zoDUx.apk",
+    //   code: "https://github.com/No-Country/s7-27-m-desafioreactnative",
+    // },
     {
       img: contrata,
       title: "Contratá",
