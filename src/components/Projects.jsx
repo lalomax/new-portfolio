@@ -1,18 +1,19 @@
 import React from "react";
+import jobtrackr from "../assets/jobtrackr.png";
 import contrata from "../assets/contrata.jpg";
 import movement from "../assets/movement.jpg";
 import zepellin from "../assets/zepellin.png";
-import roundpeople from "../assets/roundpeople.png";
+// import roundpeople from "../assets/roundpeople.png";
 import pawsitive from "../assets/pawsitive.webp"
 
 const Projects = () => {
   const projects = [
     {
-      img: roundpeople,
-      title: "Contratá",
-      desc: "A platform to connect music entrepreneur people.",
-      live: "https://roundpeople.netlify.app/",
-      code: "https://github.com/No-Country/s13-01-m-node-react",
+      img: jobtrackr,
+      title: "jobtrackr",
+      desc: "An application for job tracking .",
+      live: "https://14-jobtrackr.vercel.app",
+      code: "https://github.com/No-Country/s14-01-m-node-react/tree/main",
     },
     {
       img: zepellin,
