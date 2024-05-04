@@ -12,8 +12,7 @@ const About = () => {
           </h2>
 
           <p className="pb-5">
-            Hi, my name is Orlando Flores everyone calls me Orlando. I am a
-            Frontend Developer. I build beautifull websites with React and
+            Hi, my name is Orlando Flores. I am a Frontend Developer. I build beautifull websites with React and
             Tailwind CSS and other technologies.
           </p>
           <p className="pb-5">
@@ -24,7 +23,7 @@ const About = () => {
           {/* <p>In backend I know Node.js, Express.js, MongoDB, and Mongoose</p> */}
 
           <p>
-            In my spare time I create anki <a href="https://ankiweb.net/shared/by-author/478793435" target="_blank" className="underline">flashcards</a> about different topics about languages and programming.
+            In my spare time I create anki <a href="https://ankiweb.net/shared/by-author/478793435" target="_blank" className="underline">flashcards</a> about different topics about learning languages and programming.
           </p>
           <Link
             to="/curriculum"
