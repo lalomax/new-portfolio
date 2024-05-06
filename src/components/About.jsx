@@ -12,7 +12,7 @@ const About = () => {
           </h2>
 
           <p className="pb-5">
-            Hi, my name is Orlando Flores. I am a Frontend Developer. I build beautifull websites with React and
+            Hi, my name is Orlando. I'm a Frontend Developer. I like to build beautiful websites using React and
             Tailwind CSS and other technologies.
           </p>
           <p className="pb-5">
