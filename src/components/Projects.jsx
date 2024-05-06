@@ -54,8 +54,7 @@ const Projects = () => {
           </h2>
 
           <p className="pb-5">
-            These are some of my best projects. I have built these with React,
-            MERN and Tailwind CSS. Check them out.
+            These are some of my best projects. I have built these with React, MERN and Tailwind CSS. Check them out.
           </p>
         </div>
 
