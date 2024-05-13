@@ -1,10 +1,10 @@
 // import { Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
-  const [theme, setTheme] = useState(null);
+  const [theme, setTheme] = useState<string>("");
   const [toggleMenu, setToggleMenu] = useState(false);
 
   useEffect(() => {

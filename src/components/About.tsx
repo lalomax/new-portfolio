@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import React from "react";
 import AboutImg from "../assets/about-img.png";
 
 const About = () => {
