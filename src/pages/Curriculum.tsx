@@ -3,36 +3,36 @@ import data from "./data.json";
 function Curriculum() {
   //   console.log(data);
   return (
-    <div class="bg-primaryLight dark:bg-secondaryDark text-primaryDark dark:text-primaryLight ">
-      <div class="container mx-auto py-16">
-        <div class="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4 ">
+    <div className="bg-primaryLight dark:bg-secondaryDark text-primaryDark dark:text-primaryLight ">
+      <div className="container mx-auto py-16">
+        <div className="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4 ">
           {/* First column */}
-          <div class="col-span-4 sm:col-span-3 ">
-            <div class="bg-secondaryLight dark:bg-primaryDark shadow rounded-lg p-6 ">
-              <div class="flex flex-col items-center">
+          <div className="col-span-4 sm:col-span-3 ">
+            <div className="bg-secondaryLight dark:bg-primaryDark shadow rounded-lg p-6 ">
+              <div className="flex flex-col items-center">
                 <img
                   src={data.urlphoto}
                   className=" w-32  rounded-full mb-4 shrink-0"
                 ></img>
-                <h1 class="text-xl font-bold">
+                <h1 className="text-xl font-bold">
                   {data.name} {data.firstname}
                 </h1>
-                <p class="text-secondaryDark dark:text-secondaryLight ">
+                <p className="text-secondaryDark dark:text-secondaryLight ">
                   {data.title}
                 </p>
-                <div class="mt-6 flex flex-wrap gap-4 justify-center">
+                <div className="mt-6 flex flex-wrap gap-4 justify-center">
                   <a
                     href="https://drive.google.com/file/d/1o2oOyqgRIoAvrSlCks5KXhiaLFbN4HXs/view?usp=sharing"
-                    class="btn bg-accent  border-2 border-accent text-black hover:text-white  px-6 py-3 hover:bg-primaryDark"
+                    className="btn bg-accent  border-2 border-accent text-black hover:text-white  px-6 py-3 hover:bg-primaryDark"
                     target="_blank"
                   >
                     Download Pdf
                   </a>
                 </div>
               </div>
-              <hr class="my-6 border-t border-gray-300" />
-              <div class="flex flex-col">
-                <span class=" uppercase font-bold tracking-wider mb-2">
+              <hr className="my-6 border-t border-gray-300" />
+              <div className="flex flex-col">
+                <span className=" uppercase font-bold tracking-wider mb-2">
                   Skills
                 </span>
                 <ul>
@@ -40,10 +40,10 @@ function Curriculum() {
                     // console.log(Object.entries(data.languages))
                     Object.entries(data.skills).map((skill) => {
                       return (
-                        <li class="mb-2">
-                          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <li className="mb-2">
+                          <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                             <div
-                              class="bg-accent text-xs font-medium  text-center p-0.5 leading-none rounded-full"
+                              className="bg-accent text-xs font-medium  text-center p-0.5 leading-none rounded-full"
                               style={{width: skill[1] + '%'}}
                             >
                               
@@ -58,18 +58,18 @@ function Curriculum() {
                 </ul>
               </div>
             </div>
-            <div class="dark:bg-primaryDark bg-secondaryLight shadow rounded-lg mt-6 p-6">
-              <span class=" uppercase font-bold tracking-wider mb-2">
+            <div className="dark:bg-primaryDark bg-secondaryLight shadow rounded-lg mt-6 p-6">
+              <span className=" uppercase font-bold tracking-wider mb-2">
                 Languages
               </span>
               <ul>
                 {Object.entries(data.languages).map((language) => {
                   // console.log(key,index)
                   return (
-                    <li class="mb-2">
-                        <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <li className="mb-2">
+                        <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                             <div
-                              class="bg-accent text-xs font-medium  text-center p-0.5 leading-none rounded-full"
+                              className="bg-accent text-xs font-medium  text-center p-0.5 leading-none rounded-full"
                               style={{width: language[1] + '%'}}
                             >
                               
@@ -83,19 +83,19 @@ function Curriculum() {
             </div>
           </div>
           {/* Second column */}
-          <div class="col-span-4 sm:col-span-9 grid gap-6">
+          <div className="col-span-4 sm:col-span-9 grid gap-6">
             <div
-              class="dark:bg-primaryDark bg-secondaryLight shadow rounded-lg p-6"
+              className="dark:bg-primaryDark bg-secondaryLight shadow rounded-lg p-6"
               id="cvheader"
             >
               {/* Header */}
-              <h2 class="text-xl font-bold mb-4">About Me</h2>
-              <p class="">{data.about} </p>
-              <h3 class="font-semibold text-center mt-3 -mb-2">Find me on</h3>
+              <h2 className="text-xl font-bold mb-4">About Me</h2>
+              <p className="">{data.about} </p>
+              <h3 className="font-semibold text-center mt-3 -mb-2">Find me on</h3>
               {/* icons */}
-              <div class="flex justify-center items-center gap-6 my-6">
+              <div className="flex justify-center items-center gap-6 my-6">
                 <a
-                  class=" hover:text-accent"
+                  className=" hover:text-accent"
                   aria-label="Visit TrendyMinds LinkedIn"
                   href="https://www.linkedin.com/in/orlando-flores365/"
                   target="_blank"
@@ -103,7 +103,7 @@ function Curriculum() {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
-                    class="h-6"
+                    className="h-6"
                   >
                     <path
                       fill="currentColor"
@@ -112,7 +112,7 @@ function Curriculum() {
                   </svg>
                 </a>
                 {/* <a
-                    class="text-gray-700 hover:text-orange-600"
+                    className="text-gray-700 hover:text-orange-600"
                     aria-label="Visit TrendyMinds YouTube"
                     href=""
                     target="_blank"
@@ -120,7 +120,7 @@ function Curriculum() {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 576 512"
-                      class="h-6"
+                      className="h-6"
                     >
                       <path
                         fill="currentColor"
@@ -129,7 +129,7 @@ function Curriculum() {
                     </svg>
                   </a> */}
                 <a
-                  class=" hover:text-accent"
+                  className=" hover:text-accent"
                   aria-label="Visit TrendyMinds Facebook"
                   href="https://www.facebook.com/OrlandoFloresHuanca"
                   target="_blank"
@@ -137,7 +137,7 @@ function Curriculum() {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512"
-                    class="h-6"
+                    className="h-6"
                   >
                     <path
                       fill="currentColor"
@@ -146,7 +146,7 @@ function Curriculum() {
                   </svg>
                 </a>
                 <a
-                  class=" hover:text-accent"
+                  className=" hover:text-accent"
                   aria-label="Visit TrendyMinds Instagram"
                   href="https://www.instagram.com/lalomax365/"
                   target="_blank"
@@ -154,7 +154,7 @@ function Curriculum() {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
-                    class="h-6"
+                    className="h-6"
                   >
                     <path
                       fill="currentColor"
@@ -163,13 +163,13 @@ function Curriculum() {
                   </svg>
                 </a>
                 <a
-                  class=" hover:text-accent"
+                  className=" hover:text-accent"
                   aria-label="Visit TrendyMinds Twitter"
                   href="https://twitter.com/OrlandoFloresH"
                   target="_blank"
                 >
                   <svg
-                    class="h-6"
+                    className="h-6"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
                   >
@@ -180,13 +180,13 @@ function Curriculum() {
                   </svg>
                 </a>
                 <a
-                  class=" hover:text-accent"
+                  className=" hover:text-accent"
                   aria-label="Visit TrendyMinds tiktok"
                   href="https://www.tiktok.com/@lalomax365"
                   target="_blank"
                 >
                   <svg
-                    class="h-6"
+                    className="h-6"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -198,18 +198,18 @@ function Curriculum() {
                 </a>
               </div>
               {/* Experience section */}
-              <h2 class="text-xl font-bold mt-6 mb-4">Experience</h2>
+              <h2 className="text-xl font-bold mt-6 mb-4">Experience</h2>
               {data.experience.map((jobs) => {
                 return (
-                  <div class="mb-6">
-                    <div class="flex justify-between flex-wrap gap-2 w-full">
-                      <span class=" font-bold">{jobs.Role}</span>
+                  <div className="mb-6">
+                    <div className="flex justify-between flex-wrap gap-2 w-full">
+                      <span className=" font-bold">{jobs.Role}</span>
                       <p>
-                        <span class=" mr-2">at {jobs.Company}</span>
-                        <span class="">{jobs.time}</span>
+                        <span className=" mr-2">at {jobs.Company}</span>
+                        <span className="">{jobs.time}</span>
                       </p>
                     </div>
-                    <ul class="list-disc m-6">
+                    <ul className="list-disc m-6">
                       {jobs.descriptions.map((description) => {
                         return <li>{description}</li>;
                       })}
@@ -219,20 +219,20 @@ function Curriculum() {
               })}
             </div>
             {/* Education Section */}
-            <div class="dark:bg-primaryDark bg-secondaryLight shadow rounded-lg p-6">
-              <h2 class="text-xl font-bold mt-6 mb-4">Education</h2>
+            <div className="dark:bg-primaryDark bg-secondaryLight shadow rounded-lg p-6">
+              <h2 className="text-xl font-bold mt-6 mb-4">Education</h2>
               {data.education.map((college) => {
                 return (
-                  <div class="mb-6">
-                    <p class=" font-bold">{college.name}</p>
-                    <div class="flex justify-between flex-wrap gap-2 w-full">
-                      <span class=" font-bold">{college.degree}</span>
+                  <div className="mb-6">
+                    <p className=" font-bold">{college.name}</p>
+                    <div className="flex justify-between flex-wrap gap-2 w-full">
+                      <span className=" font-bold">{college.degree}</span>
                       <p>
-                        <span class=" mr-2">{college.location}</span>
-                        <span class="">{college.time}</span>
+                        <span className=" mr-2">{college.location}</span>
+                        <span className="">{college.time}</span>
                       </p>
                     </div>
-                    <ul class="list-disc m-6">
+                    <ul className="list-disc m-6">
                       {college.descriptions.map((description) => {
                         return <li>{description}</li>;
                       })}
