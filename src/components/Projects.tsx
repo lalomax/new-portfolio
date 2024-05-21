@@ -1,4 +1,3 @@
-import React from "react";
 import jobtrackr from "../assets/jobtrackr.png";
 import contrata from "../assets/contrata.jpg";
 import movement from "../assets/movement.jpg";

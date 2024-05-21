@@ -1,5 +1,4 @@
-import React from "react";
-import HeroImg from "../assets/hero-img.png";
+import HeroImg from "../assets/home-main.svg";
 
 import {
   AiOutlineTwitter,
@@ -10,17 +9,28 @@ import {
 
 const icons = [
   {
+    id: 1,
     link: "https://twitter.com/OrlandoFloresH",
     icon: <AiOutlineTwitter size={40} />,
+    arialabel:"Find me on x",
   },
   {
+    id:2,
     link: "https://www.facebook.com/OrlandoFloresHuanca",
     icon: <AiOutlineFacebook size={40} />,
+    arialabel:"Find me on facebook",
   },
-  { link: "https://github.com/lalomax", icon: <AiFillGithub size={40} /> },
+  { 
+    id: 3,
+    link: "https://github.com/lalomax",
+    icon: <AiFillGithub size={40} />,
+    arialabel:"Find me on github",
+  },
   {
+    id: 4,
     link: "https://www.linkedin.com/in/orlando-flores365/",
     icon: <AiOutlineLinkedin size={40} />,
+    arialabel:"Find me on linkedin",
   },
 ];
 
@@ -40,11 +50,13 @@ const Hero = () => {
 
           <div className="flex py-5 gap-2 ">
             {/* Display array icons */}
-            {icons.map(({ link, icon }) => (
+            {icons.map(({id, link, icon, arialabel }) => (
               <a
+                key={id}
                 href={link}
                 className="inline-block text-accent hover:text-white"
                 target="_blank"
+                aria-label={arialabel}
               >
                 {icon}
               </a>

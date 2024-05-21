@@ -96,7 +96,7 @@ const Header = () => {
       </nav>
 
       {/* Toggle button */}
-      <button onClick={handleToggleMenu} className="block md:hidden">
+      <button id="navbarButton" aria-label="navigation Button" onClick={handleToggleMenu} className="block md:hidden">
         {!toggleMenu ? (
           <AiOutlineMenu size={30} />
         ) : (
