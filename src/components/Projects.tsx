@@ -2,7 +2,7 @@ import jobtrackr from "../assets/jobtrackr.png";
 import contrata from "../assets/contrata.jpg";
 import movement from "../assets/movement.jpg";
 // import zepellin from "../assets/zepellin.png";
-// import roundpeople from "../assets/roundpeople.png";
+import roundpeople from "../assets/roundpeople.png";
 // import pawsitive from "../assets/pawsitive.webp"
 
 const Projects = () => {
@@ -12,6 +12,13 @@ const Projects = () => {
       title: "jobtrackr",
       desc: "An application for job tracking .",
       live: "https://14-jobtrackr.vercel.app",
+      code: "https://github.com/No-Country/s14-01-m-node-react/tree/main",
+    },
+    {
+      img: roundpeople,
+      title: "Roundpeople",
+      desc: "La web del emprendimiento musical",
+      live: "https://s13-01-m-node-react-1.onrender.com/",
       code: "https://github.com/No-Country/s14-01-m-node-react/tree/main",
     },
     // {
