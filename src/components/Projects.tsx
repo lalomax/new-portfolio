@@ -19,7 +19,7 @@ const Projects = () => {
       title: "Roundpeople",
       desc: "La web del emprendimiento musical",
       live: "https://s13-01-m-node-react-1.onrender.com/",
-      code: "https://github.com/No-Country/s14-01-m-node-react/tree/main",
+      code: "https://github.com/No-Country/s13-01-m-node-react",
     },
     // {
     //   img: zepellin,
