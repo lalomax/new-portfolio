@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Curriculum from "./pages/Curriculum";
 
 import { Routes, Route } from "react-router-dom";
+import ScrollButton from "./components/ScrollButton";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/curriculum" element={<Curriculum />} />
       </Routes>
-
+      <ScrollButton />
       <Footer />
     </>
   );
