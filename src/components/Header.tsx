@@ -2,6 +2,7 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { flushSync } from "react-dom";
 
 const Header = () => {
   const [theme, setTheme] = useState<string>("");
@@ -15,8 +16,13 @@ const Header = () => {
     }
   }, []);
 
-  const handleThemeSwitch = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+  const handleThemeSwitch = async () => {
+    await document.startViewTransition(() => {
+      flushSync(() => {
+        setTheme(theme === "dark" ? "light" : "dark");
+        // setIsDarkMode(isDarkMode);
+      });
+    }).ready;
     handleToggleMenu();
   };
 
