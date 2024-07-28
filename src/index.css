@@ -43,9 +43,9 @@ code {
 
 .scrollbutton {
   position: fixed;  
-  width: 95%; 
-  left: 50%; 
-  bottom: 60px; 
+  width: 100%; 
+  left: 45%; 
+  bottom: 40px; 
   height: 20px; 
   font-size: 3rem; 
   z-index: 1; 
