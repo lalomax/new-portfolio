@@ -6,13 +6,13 @@ import Contact from "../components/Contact";
 
 const Home = () => {
   return (
-    <>
+    <div className="dark:text-white text-primaryDark">
       <Hero />
       <About />
       <Projects />
 
       <Contact />
-    </>
+    </div>
   );
 };
 

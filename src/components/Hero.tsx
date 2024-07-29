@@ -39,12 +39,12 @@ const Hero = () => {
     <section className="dark:bg-primaryDark bg-primaryLight px-5  py-32">
       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
         <div className="hero-info pb-5 md:pb-0">
-          <h1 className="font-pacifico text-4xl lg:text-6xl dark:text-white text-primaryDark lg:leading-normal">
+          <h1 className="font-pacifico text-4xl lg:text-6xl lg:leading-normal">
             Hi, <br />I'm <span className="text-accent">O</span>rlando <br />
             Frontend Developer
           </h1>
 
-          <p className="py-5 text-black dark:text-primaryLight">
+          <p className="py-5 ">
             Proficient in JavaScript, React.js and Tailwind CSS
           </p>
 
