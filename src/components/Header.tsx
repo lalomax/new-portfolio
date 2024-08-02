@@ -5,21 +5,21 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { flushSync } from "react-dom";
 
 const Header = () => {
-  const [theme, setTheme] = useState<string>("");
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(window.matchMedia("(prefers-color-scheme: dark)").matches);
+  const [toggleMenu, setToggleMenu] = useState<boolean>(false);
 
-  useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  //     setIsDarkMode(true);
+  //   } else {
+  //     setIsDarkMode(false);
+  //   }
+  // }, []);
 
   const handleThemeSwitch = async () => {
     await document.startViewTransition(() => {
       flushSync(() => {
-        setTheme(theme === "dark" ? "light" : "dark");
+        setIsDarkMode(isDarkMode => !isDarkMode);
         // setIsDarkMode(isDarkMode);
       });
     }).ready;
@@ -27,14 +27,14 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (theme === "dark") {
+    if (isDarkMode) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
-  }, [theme]);
+  }, [isDarkMode]);
 
-  console.log(theme);
+  // console.log(isDarkMode);
   const handleToggleMenu = () => setToggleMenu(!toggleMenu);
 
   return (
@@ -64,7 +64,7 @@ const Header = () => {
               onClick={handleThemeSwitch}
               className="bg-primaryDark text-lg p-1 rounded-md"
             >
-              {theme === "dark" ? "🌙" : "🌞"}
+              {isDarkMode ? "🌙" : "🌞"}
             </button>
           </li>
         </ul>
@@ -95,7 +95,7 @@ const Header = () => {
               onClick={handleThemeSwitch}
               className="bg-primaryDark text-lg p-4 rounded-md"
             >
-              {theme === "dark" ? "🌙" : "🌞"}
+              {isDarkMode ? "🌙" : "🌞"}
             </button>
           </li>
         </ul>
