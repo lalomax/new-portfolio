@@ -7,14 +7,16 @@ import { flushSync } from "react-dom";
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(window.matchMedia("(prefers-color-scheme: dark)").matches);
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
-
-  // useEffect(() => {
-  //   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-  //     setIsDarkMode(true);
-  //   } else {
-  //     setIsDarkMode(false);
-  //   }
-  // }, []);
+console.log(isDarkMode)
+  useEffect(() => {
+    // if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTimeout(() => {
+        
+        handleThemeSwitch();
+        // setIsDarkMode(true)
+      }, 1000);
+    // } 
+  }, []);
 
   const handleThemeSwitch = async () => {
     await document.startViewTransition(() => {
@@ -23,7 +25,7 @@ const Header = () => {
         // setIsDarkMode(isDarkMode);
       });
     }).ready;
-    handleToggleMenu();
+    // handleToggleMenu();
   };
 
   useEffect(() => {

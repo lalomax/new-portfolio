@@ -22,7 +22,7 @@ const About = () => {
           {/* <p>In backend I know Node.js, Express.js, MongoDB, and Mongoose</p> */}
 
           <p>
-            In my spare time I create anki <a href="https://ankiweb.net/shared/by-author/478793435" target="_blank" className="underline">flashcards</a> about different topics about learning languages and programming.
+            In my spare time I create Anki <a href="https://ankiweb.net/shared/by-author/478793435" target="_blank" className="underline">flashcards</a> about learning languages and programming.
           </p>
           <Link
             to="/curriculum"
