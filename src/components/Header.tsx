@@ -7,7 +7,7 @@ import { flushSync } from "react-dom";
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(!window.matchMedia("(prefers-color-scheme: dark)").matches);
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
-console.log(isDarkMode)
+// console.log(isDarkMode)
   useEffect(() => {
     // if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTimeout(() => {
@@ -25,7 +25,7 @@ console.log(isDarkMode)
         // setIsDarkMode(isDarkMode);
       });
     }).ready;
-    // handleToggleMenu();
+    handleToggleMenu();
   };
 
   useEffect(() => {
@@ -47,24 +47,24 @@ console.log(isDarkMode)
 
       {/* Desktop Nav */}
       <nav className="hidden md:block">
-        <ul className="flex">
+        <ul className="flex gap-1 items-center ">
           <li>
-            <Link to="/#about">About</Link>
+            <Link className=" btn bg-accent   text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#about">About</Link>
           </li>
           <li>
-            <Link to="/#projects">Projects</Link>
+            <Link className="btn bg-accent   text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#projects">Projects</Link>
           </li>
           <li>
-            <Link to="/#contact">Contact</Link>
+            <Link className="btn bg-accent   text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#contact">Contact</Link>
           </li>
           <li>
-            <Link to="/curriculum/#cvheader">Resume</Link>
+            <Link className="btn bg-accent   text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/curriculum/#cvheader">Resume</Link>
           </li>
           <li>
             <button
               type="button"
               onClick={handleThemeSwitch}
-              className="bg-primaryDark text-lg p-1 rounded-md"
+              className="bg-primaryDark text-lg p-1 rounded-md  "
             >
               {isDarkMode ? "🌙" : "🌞"}
             </button>
