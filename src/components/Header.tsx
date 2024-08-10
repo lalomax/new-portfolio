@@ -49,16 +49,16 @@ const Header = () => {
       <nav className="hidden md:block">
         <ul className="flex gap-1 items-center ">
           <li>
-            <Link className=" btn bg-accent   text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#about">About</Link>
+            <Link className="bg-accent transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#about">About</Link>
           </li>
           <li>
-            <Link className="btn bg-accent   text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#projects">Projects</Link>
+            <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#projects">Projects</Link>
           </li>
           <li>
-            <Link className="btn bg-accent   text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#contact">Contact</Link>
+            <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#contact">Contact</Link>
           </li>
           <li>
-            <Link className="btn bg-accent   text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/curriculum/#cvheader">Resume</Link>
+            <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/curriculum/#cvheader">Resume</Link>
           </li>
           <li>
             <button
