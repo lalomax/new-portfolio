@@ -1,7 +1,3 @@
-
-<a id="readme-top"></a>
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -83,8 +79,6 @@ If it is not installed, [download](https://nodejs.org/en) and install it.
    npm run dev
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ROADMAP -->
@@ -104,7 +98,7 @@ See the [open issues](https://github.com/lalomax/Notes-app/issues) for a full li
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Don't forget to give the project a star! Thanks in advance!
 
 1. Clone the repository
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -124,9 +118,6 @@ flowchart
     G -- Rejected --> D
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- LICENSE -->
 ## License
@@ -137,12 +128,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [https://x.com/OrlandoFloresH](https://x.com/OrlandoFloresH) - lalomax365@gmail.com
-
-Project Link: [https://github.com/lalomax/travel-journal](https://github.com/lalomax/new-portfolio)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+Orlando - [https://x.com/OrlandoFloresH](https://x.com/OrlandoFloresH) - lalomax365@gmail.com
 
 
 <!-- ACKNOWLEDGMENTS -->
@@ -158,8 +144,6 @@ Use this space to list resources you find helpful and would like to give credit 
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
