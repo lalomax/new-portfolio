@@ -108,12 +108,12 @@ Don't forget to give the project a star! Thanks in advance!
 
 ```mermaid
 flowchart 
-    A(1. Clone the repository) --> B((Clone Fork))
-    B --> C{2. Create Feature Branch}
+    A(1 Clone the repository) --> B((Clone Fork))
+    B --> C{2 Create Feature Branch}
     C --> D[Make Changes]
-    D --> E((3. Commit Changes))
-    E --> F((4. Push Changes))
-    F --> G((5. Create Pull Request))
+    D --> E((3 Commit Changes))
+    E --> F((4 Push Changes))
+    F --> G((5 Create Pull Request))
     G -- Approved --> H((Merge Pull Request))
     G -- Rejected --> D
 ```
