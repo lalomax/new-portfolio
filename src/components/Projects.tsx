@@ -11,7 +11,7 @@ const Projects = () => {
     {
       img: agromentor,
       title: "Agromentor",
-      desc: "Agriculture mentoring usin IA and forecasts",
+      desc: "Agriculture mentoring using IA and forecasts",
       live: "https://s17-05-m-node-react.onrender.com/",
       code: "https://github.com/No-Country-simulation/s17-05-m-node-react",
     },
