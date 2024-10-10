@@ -4,15 +4,23 @@ import movement from "../assets/movement.jpg";
 // import zepellin from "../assets/zepellin.png";
 import roundpeople from "../assets/roundpeople.png";
 // import pawsitive from "../assets/pawsitive.webp"
+import agromentor from "../assets/agromentor.png"
 
 const Projects = () => {
   const projects = [
+    {
+      img: agromentor,
+      title: "Agromentor",
+      desc: "Agriculture mentoring usin IA and forecasts",
+      live: "https://s17-05-m-node-react.onrender.com/",
+      code: "https://github.com/No-Country-simulation/s17-05-m-node-react",
+    },
     {
       img: jobtrackr,
       title: "jobtrackr",
       desc: "An application for job tracking .",
       live: "https://14-jobtrackr.vercel.app",
-      code: "https://github.com/No-Country/s14-01-m-node-react/tree/main",
+      code: "https://github.com/No-Country/s14-01-m-node-react",
     },
     {
       img: roundpeople,
