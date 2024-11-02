@@ -11,18 +11,16 @@ const About = () => {
           </h2>
 
           <p className="pb-5">
-            Hi, my name is Orlando. I'm a Frontend Developer. I like to build beautiful websites using React and
-            Tailwind CSS and other technologies.
+            Crafting stunning digital experiences with modern technologies.
           </p>
           <p className="pb-5">
-            I'm proficient in Frontend skills like React.js, Redux, Redux Tool
-            Kit, Axios, Tailwindcss, and many more.
+            Proficient in frontend skills like React.js, Next.js, Axios, Tailwindcss, and more.
           </p>
 
           {/* <p>In backend I know Node.js, Express.js, MongoDB, and Mongoose</p> */}
 
           <p>
-            In my spare time I create Anki <a href="https://ankiweb.net/shared/by-author/478793435" target="_blank" className="underline">flashcards</a> about learning languages and programming.
+            Passionate about language learning and sharing knowledge through Anki <a href="https://ankiweb.net/shared/by-author/478793435" target="_blank" className="underline">flashcards</a>.
           </p>
           <Link
             to="/curriculum"
