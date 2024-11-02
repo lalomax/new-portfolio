@@ -1,4 +1,4 @@
-import HeroImg from "../assets/home-main.svg";
+import HeroImg from "../assets/hero-portrait.webp";
 
 import {
   AiOutlineTwitter,
