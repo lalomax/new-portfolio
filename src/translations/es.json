@@ -1,0 +1,23 @@
+{
+  "AboutMe": "Sobre mi",
+  "Resume": "Currículum",
+  "Projects": "Proyectos",
+  "Contact": "Contacto",
+  "See-Projects": "Ver proyectos",
+  "Crafting": "Creando experiencias digitales impresionantes con tecnologías modernas.",
+  "Proficient": "Dominio de habilidades frontend como React.js, Next.js, Axios, Tailwindcss, y más.",
+  "Passionate": "Apasionado por aprender idiomas y compartir conocimiento a través de Anki ",
+   "Hi": "Hola",
+ "Iam": "Soy",
+ "role": "Desarrollador Frontend",
+ "proficient-hero": "Competente en JavaScript, React.js y Tailwind CSS",
+ "ProjectsDesc" : "Estos son algunos de mis mejores proyectos. Fueron construidos con un gran equipo usando React, MERN y Tailwind CSS. Échales un vistazo.",
+ "Contact-me": "Contáctame",
+ "ContactDesc" : "Actualmente estoy abierto para una posición de desarrollador frontend. Si quieres hablar sobre eso, no dudes en mandarme un email o llamarme.",
+ "Email": "Correo electrónico",
+ "Phone": "Teléfono",
+ "copyright": "Todos los derechos reservados",
+ "Live": "En vivo",
+ "Code": "Código"
+  
+}

@@ -3,10 +3,14 @@ import { HashLink as Link } from "react-router-hash-link";
 import { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { flushSync } from "react-dom";
+import { useTranslation } from 'react-i18next';
+import i18n from "../i18n";
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isDarkMode, setIsDarkMode] = useState<boolean>(!window.matchMedia("(prefers-color-scheme: dark)").matches);
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
+  const [isEnglish, setIsEnglish] = useState<boolean>(true);
 // console.log(isDarkMode)
   useEffect(() => {
     // if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -17,6 +21,11 @@ const Header = () => {
       }, 1000);
     // } 
   }, []);
+
+  const handleLanguageSwitch = () => {
+    setIsEnglish(!isEnglish);
+    i18n.changeLanguage(isEnglish ? 'en' : 'es');
+  };
 
   const handleThemeSwitch = async () => {
     await document.startViewTransition(() => {
@@ -49,16 +58,16 @@ const Header = () => {
       <nav className="hidden md:block">
         <ul className="flex gap-1 items-center ">
           <li>
-            <Link className="bg-accent transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#about">About</Link>
+            <Link className="bg-accent transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#about">{t('AboutMe')}</Link>
           </li>
           <li>
-            <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#projects">Projects</Link>
+            <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#projects">{t('Projects')}</Link>
           </li>
           <li>
-            <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#contact">Contact</Link>
+            <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#contact">{t('Contact')}</Link>
           </li>
           <li>
-            <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/curriculum/#cvheader">Resume</Link>
+            <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/curriculum/#cvheader">{t('Resume')}</Link>
           </li>
           <li>
             <button
@@ -66,7 +75,16 @@ const Header = () => {
               onClick={handleThemeSwitch}
               className="bg-primaryDark text-lg p-1 rounded-md  "
             >
-              {isDarkMode ? "🌙" : "🌞"}
+              {isDarkMode ? "🌙" : "☀️"}
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              onClick={handleLanguageSwitch}
+              className="bg-primaryDark text-lg p-1 rounded-md  "
+            >
+              {isEnglish ? "ES" : "EN"}
             </button>
           </li>
         </ul>
@@ -80,24 +98,33 @@ const Header = () => {
       >
         <ul className="flex flex-col">
           <li>
-            <Link onClick={handleToggleMenu} to="/#about">About</Link>
+            <Link onClick={handleToggleMenu} to="/#about">{t('AboutMe')}</Link>
           </li>
           <li>
-            <Link onClick={handleToggleMenu} to="/#projects">Projects</Link>
+            <Link onClick={handleToggleMenu} to="/#projects">{t('Projects')}</Link>
           </li>
           <li>
-            <Link onClick={handleToggleMenu} to="/#contact">Contact</Link>
+            <Link onClick={handleToggleMenu} to="/#contact">{t('Contact')}</Link>
           </li>
           <li>
-            <Link onClick={handleToggleMenu} to="/curriculum">Resume</Link>
+            <Link onClick={handleToggleMenu} to="/curriculum">{t('Resume')}</Link>
           </li>
           <li>
             <button
               type="button"
               onClick={handleThemeSwitch}
-              className="bg-primaryDark text-lg p-4 rounded-md"
+              className="bg-primaryDark text-lg pl-4 rounded-md"
             >
               {isDarkMode ? "🌙" : "🌞"}
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              onClick={handleLanguageSwitch}
+              className="bg-primaryDark text-lg pl-4   "
+            >
+              {isEnglish ? "ES" : "EN"}
             </button>
           </li>
         </ul>

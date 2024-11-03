@@ -5,27 +5,33 @@ import movement from "../assets/movement.jpg";
 import roundpeople from "../assets/roundpeople.png";
 // import pawsitive from "../assets/pawsitive.webp"
 import agromentor from "../assets/agromentor.png"
+import { useTranslation } from 'react-i18next';
+import i18n from "../i18n";
 
 const Projects = () => {
+  const { t } = useTranslation();
   const projects = [
     {
       img: agromentor,
       title: "Agromentor",
-      desc: "Agriculture mentoring using IA and forecasts",
+      desc: "Agriculture mentoring using AI and forecasts.",
+      descES: "Asesoramiento agrícola mediante IA y pronósticos.",
       live: "https://s17-05-m-node-react.onrender.com/",
       code: "https://github.com/No-Country-simulation/s17-05-m-node-react",
     },
     {
       img: jobtrackr,
       title: "jobtrackr",
-      desc: "An application for job tracking .",
+      desc: "An application for job tracking.",
+      descES: "Una aplicación para el seguimiento de oprtunidades de trabajo.",
       live: "https://14-jobtrackr.vercel.app",
       code: "https://github.com/No-Country/s14-01-m-node-react",
     },
     {
       img: roundpeople,
       title: "Roundpeople",
-      desc: "La web del emprendimiento musical",
+      desc: "The web of musical entrepreneurship.",
+      descES: "La web de la iniciativa de creación musical.",
       live: "https://s13-01-m-node-react-1.onrender.com/",
       code: "https://github.com/No-Country/s13-01-m-node-react",
     },
@@ -47,6 +53,7 @@ const Projects = () => {
       img: contrata,
       title: "Contratá",
       desc: "A platform to connect people with qualified services.",
+      descES: "Plataforma para conectar personas con servicios calificados.",
       live: "https://contrata.vercel.app/",
       code: "https://github.com/No-Country/S6-15-M-MERN",
     },
@@ -54,6 +61,7 @@ const Projects = () => {
       img: movement,
       title: "Movement",
       desc: "Sportswear trade and social support.",
+      descES: "Comercio de ropa deportiva y apoyo social.",
       live: "https://c854pernfront-5m8om.ondigitalocean.app/home",
       code: "https://github.com/No-Country/c8-t-54-pern",
     },
@@ -64,11 +72,11 @@ const Projects = () => {
       <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
         <div className="about-info mb-5 ">
           <h2 className="text-4xl inline-block font-bold mb-5 border-b-[5px] border-indigo-600 pb-2">
-            Projects
+            {t('Projects')}
           </h2>
 
           <p className="pb-5">
-            These are some of my best projects. I have built these with React, MERN and Tailwind CSS. Check them out.
+            {t('ProjectsDesc')}
           </p>
         </div>
 
@@ -82,7 +90,7 @@ const Projects = () => {
               <img className="w-full" src={project.img} alt={project.title} />
               <div className="flex absolute left-0 right-0 top-[13px] bottom-0 mx-auto w-[90%] h-[90%]  bg-primaryDark  opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
                 <p className="py-5 text-center font-bold px-2 text-white">
-                  {project.desc}
+                  {i18n.language === 'es' ? project.descES : project.desc}
                 </p>
 
                 <div className="mx-auto">
@@ -91,14 +99,14 @@ const Projects = () => {
                     className="px-5 py-2 bg-blue-500 hover:bg-blue-600 mr-5 font-bold"
                     target="_blank"
                   >
-                    Live
+                    {t('Live')}
                   </a>
                   <a
                     href={project.code}
                     className="px-5 py-2 bg-blue-500 hover:bg-blue-800 font-bold"
                     target="_blank"
                   >
-                    Code
+                    {t('Code')}
                   </a>
                 </div>
               </div>

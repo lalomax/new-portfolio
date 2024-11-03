@@ -1,5 +1,7 @@
+import {useTranslation} from 'react-i18next';
 const Footer = () => {
-  return <div className="py-4 text-center bg-primaryDark text-white "> &copy; {new Date().getFullYear()} lalomax all rights reserved</div>;
+  const { t } = useTranslation();
+  return <div className="py-4 text-center bg-primaryDark text-white "> &copy; {new Date().getFullYear()} Lalomax - {t('copyright')}</div>;
 };
 
 export default Footer;

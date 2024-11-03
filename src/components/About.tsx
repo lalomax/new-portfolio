@@ -1,32 +1,35 @@
 import { Link } from "react-router-dom";
 import AboutImg from "../assets/about-orland.jpg";
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="dark:bg-primaryDark bg-primaryLight px-5 py-32 " id="about">
       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between ">
         <div className="about-info ">
           <h2 className="text-4xl inline-block font-bold mb-5 border-b-[5px] border-indigo-600 pb-2">
-            About Me
+            {t('AboutMe')}
           </h2>
 
           <p className="pb-5">
-            Crafting stunning digital experiences with modern technologies.
+            {t('Crafting')}
           </p>
           <p className="pb-5">
-            Proficient in frontend skills like React.js, Next.js, Axios, Tailwindcss, and more.
+            {t('Proficient')}
           </p>
 
           {/* <p>In backend I know Node.js, Express.js, MongoDB, and Mongoose</p> */}
 
           <p>
-            Passionate about language learning and sharing knowledge through Anki <a href="https://ankiweb.net/shared/by-author/478793435" target="_blank" className="underline">flashcards</a>.
+           {t('Passionate')} <a href="https://ankiweb.net/shared/by-author/478793435" target="_blank" className="underline">flashcards</a>.
           </p>
           <Link
             to="/curriculum"
             className="inline-block btn bg-accent  border-2 border-accent text-black hover:text-white  px-6 py-3 my-4 hover:bg-primaryDark"
           >
-            Resume
+            {t('Resume')}
           </Link>
         </div>
 

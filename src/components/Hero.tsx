@@ -1,5 +1,7 @@
 import HeroImg from "../assets/hero-portrait.webp";
 
+import { useTranslation } from 'react-i18next';
+
 import {
   AiOutlineTwitter,
   AiOutlineFacebook,
@@ -35,17 +37,18 @@ const icons = [
 ];
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section className="dark:bg-primaryDark bg-primaryLight px-5  py-32">
       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
         <div className="hero-info pb-5 md:pb-0">
           <h1 className="font-pacifico text-4xl lg:text-6xl lg:leading-normal">
-            Hi, <br />I'm <span className="text-accent">O</span>rlando <br />
-            Frontend Developer
+            {t('Hi')}<br />{t('Iam')} <span className="text-accent">O</span>rlando <br />
+            {t('role')}
           </h1>
 
           <p className="py-5 ">
-            Proficient in JavaScript, React.js and Tailwind CSS
+            {t('proficient-hero')}
           </p>
 
           <div className="flex py-5 gap-2 ">
@@ -68,7 +71,7 @@ const Hero = () => {
             href="/#projects"
             className=" btn bg-accent  border-2 border-accent text-black hover:text-white  px-6 py-3 hover:bg-primaryDark"
           >
-            See Projects
+            {t('See-Projects')}
           </a>
         </div>
 
