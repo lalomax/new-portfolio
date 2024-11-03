@@ -29,12 +29,14 @@
 </div>
 
 
+![Untitled](https://github.com/user-attachments/assets/99716f33-39b0-4a1a-8d4a-96d27e08fa61)
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![image](https://github.com/user-attachments/assets/60e7d31b-bdda-421c-8f82-58e08b9caa89)
+
+
 
 
 This portfolio page showcases works and projects. It features a clean, modern design with sections highlighting his skills, projects, and contact information. The layout is user-friendly, with clear navigation and visually appealing elements that emphasize his expertise in web development and design.
