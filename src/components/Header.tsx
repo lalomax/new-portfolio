@@ -10,8 +10,15 @@ const Header = () => {
   const { t } = useTranslation();
   const [isDarkMode, setIsDarkMode] = useState<boolean>(!window.matchMedia("(prefers-color-scheme: dark)").matches);
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
-  const [isEnglish, setIsEnglish] = useState<boolean>(true);
-// console.log(isDarkMode)
+  const [isEnglish, setIsEnglish] = useState<boolean>(
+    window.navigator.languages[0] === "en" ? true : false
+  );
+
+  // useEffect(() => {
+  //   i18n.changeLanguage(isEnglish ? 'en' : 'es');
+  // }, [isEnglish]);
+
+  // console.log(isDarkMode)
   useEffect(() => {
     // if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTimeout(() => {
