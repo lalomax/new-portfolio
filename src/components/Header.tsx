@@ -74,7 +74,7 @@ const Header = () => {
             <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#contact">{t('Contact')}</Link>
           </li>
           <li>
-            <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/curriculum/#cvheader">{t('Resume')}</Link>
+            <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="https://drive.google.com/file/d/1o2oOyqgRIoAvrSlCks5KXhiaLFbN4HXs/view" target="_blank">{t('Resume')}</Link>
           </li>
           <li>
             <button
@@ -114,7 +114,7 @@ const Header = () => {
             <Link onClick={handleToggleMenu} to="/#contact">{t('Contact')}</Link>
           </li>
           <li>
-            <Link onClick={handleToggleMenu} to="/curriculum">{t('Resume')}</Link>
+            <Link onClick={handleToggleMenu} to="https://drive.google.com/file/d/1o2oOyqgRIoAvrSlCks5KXhiaLFbN4HXs/view" target="_blank">{t('Resume')}</Link>
           </li>
           <li>
             <button

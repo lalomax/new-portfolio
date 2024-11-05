@@ -26,7 +26,8 @@ const About = () => {
            {t('Passionate')} <a href="https://ankiweb.net/shared/by-author/478793435" target="_blank" className="underline">flashcards</a>.
           </p>
           <Link
-            to="/curriculum"
+            to="https://drive.google.com/file/d/1o2oOyqgRIoAvrSlCks5KXhiaLFbN4HXs/view" 
+            target="_blank"
             className="inline-block btn bg-accent  border-2 border-accent text-black hover:text-white  px-6 py-3 my-4 hover:bg-primaryDark"
           >
             {t('Resume')}
