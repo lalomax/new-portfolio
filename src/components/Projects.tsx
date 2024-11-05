@@ -5,12 +5,21 @@ import movement from "../assets/movement.jpg";
 import roundpeople from "../assets/roundpeople.png";
 // import pawsitive from "../assets/pawsitive.webp"
 import agromentor from "../assets/agromentor.png"
+import breakandfocus from "../assets/breakfocus.png"
 import { useTranslation } from 'react-i18next';
 import i18n from "../i18n";
 
 const Projects = () => {
   const { t } = useTranslation();
   const projects = [
+    {
+      img: breakandfocus,
+      title: "Break&Focus",
+      desc: "Avoid procastination and focus on your goals.",
+      descES: "Evita la procrastinación y enfoca tus objetivos.",
+      live: "https://breakandfocus.onrender.com/",
+      code: "https://github.com/No-Country-simulation/s18-09-m-node-react",
+    },
     {
       img: agromentor,
       title: "Agromentor",
