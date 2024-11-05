@@ -14,17 +14,17 @@ const About = () => {
           </h2>
 
           <p className="pb-5">
-            {t('Crafting')}
+            {t('About-description')}
           </p>
           <p className="pb-5">
-            {t('Proficient')}
+            {t('About-description1')}
+            <a href="https://ankiweb.net/shared/by-author/478793435" target="_blank" className="underline">{t('About-description2')}</a>
+            {t('About-description3')}
           </p>
 
           {/* <p>In backend I know Node.js, Express.js, MongoDB, and Mongoose</p> */}
 
-          <p>
-           {t('Passionate')} <a href="https://ankiweb.net/shared/by-author/478793435" target="_blank" className="underline">flashcards</a>.
-          </p>
+    
           <Link
             to="https://drive.google.com/file/d/1o2oOyqgRIoAvrSlCks5KXhiaLFbN4HXs/view" 
             target="_blank"

@@ -48,7 +48,7 @@ const Hero = () => {
           </h1>
 
           <p className="py-5 ">
-            {t('proficient-hero')}
+            {t('Hero-description')}
           </p>
 
           <div className="flex py-5 gap-2 ">
