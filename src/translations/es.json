@@ -18,6 +18,8 @@
  "Phone": "Teléfono",
  "copyright": "Todos los derechos reservados",
  "Live": "En vivo",
- "Code": "Código"
+ "Code": "Código",
+"EmailCopied": "Correo copiado",
+"PhoneCopied": "Teléfono copiado"
   
 }

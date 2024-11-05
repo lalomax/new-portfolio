@@ -18,5 +18,7 @@
  "Phone": "Phone",
  "copyright": "All rights reserved",
  "Live": "Live",
- "Code": "Code"
+ "Code": "Code",
+"EmailCopied": "Email copied",
+"PhoneCopied": "Phone copied"
 }
