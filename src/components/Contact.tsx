@@ -26,7 +26,7 @@ const Contact = () => {
               </p>
 
               <p className="flex items-center gap-1 justify-center group">
-                <span className="font-bold">{t('Phone')}</span>
+                <span className="font-bold">WhatsApp</span>
                 <a href="https://wa.me/message/NH6NSU3VKWD2A1?src=qr" target="_blank" className="mb-1 border-b-[2px]  border-indigo-600 group-hover:animate-pulse">+591 77595073</a>
                 <button className="ml-2 text-slate-400 group-hover:animate-spin" onClick={() => {
                   navigator.clipboard.writeText('+591 77595073')
