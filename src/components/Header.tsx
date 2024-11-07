@@ -5,6 +5,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { flushSync } from "react-dom";
 import { useTranslation } from 'react-i18next';
 import i18n from "../i18n";
+import ReactGA from 'react-ga4';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -55,6 +56,14 @@ const Header = () => {
   // console.log(isDarkMode);
   const handleToggleMenu = () => setToggleMenu(!toggleMenu);
 
+  function handleClick( event: React.MouseEvent<HTMLAnchorElement, MouseEvent>): void {
+    ReactGA.event({
+      category: 'Button',
+      action: 'Click',
+      label: event.currentTarget.innerText,
+    });
+  }
+
   return (
     <header className="flex justify-between px-5 py-2 bg-primaryDark text-slate text-white fixed w-full z-10">
       <Link to="/" className="logo text-2xl font-bold text-accent">
@@ -65,16 +74,16 @@ const Header = () => {
       <nav className="hidden md:block">
         <ul className="flex gap-1 items-center ">
           <li>
-            <Link className="bg-accent transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#about">{t('AboutMe')}</Link>
+            <Link onClick={handleClick} className="bg-accent transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#about">{t('AboutMe')}</Link>
           </li>
           <li>
-            <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#projects">{t('Projects')}</Link>
+            <Link onClick={handleClick} className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#projects">{t('Projects')}</Link>
           </li>
           <li>
-            <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#contact">{t('Contact')}</Link>
+            <Link onClick={handleClick} className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="/#contact">{t('Contact')}</Link>
           </li>
           <li>
-            <Link className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="https://drive.google.com/file/d/1o2oOyqgRIoAvrSlCks5KXhiaLFbN4HXs/view" target="_blank">{t('Resume')}</Link>
+            <Link onClick={handleClick} className="bg-accent  transition ease-in-out delay-150  text-black hover:text-white  px-6 py-3 hover:bg-primaryDark" to="https://drive.google.com/file/d/1o2oOyqgRIoAvrSlCks5KXhiaLFbN4HXs/view" target="_blank">{t('Resume')}</Link>
           </li>
           <li>
             <button
