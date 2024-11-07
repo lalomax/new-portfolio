@@ -8,6 +8,7 @@ import i18n from "../i18n";
 import ReactGA from 'react-ga4';
 
 const Header = () => {
+  
   const { t } = useTranslation();
   const [isDarkMode, setIsDarkMode] = useState<boolean>(!window.matchMedia("(prefers-color-scheme: dark)").matches);
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
@@ -28,6 +29,14 @@ const Header = () => {
         // setIsDarkMode(true)
       }, 1000);
     // } 
+  }, []);
+
+  useEffect(() => {
+    ReactGA.initialize('G-Y8PG5EEHZM');
+    ReactGA.gtag('event', 'page_view', {
+      page_path: '/',
+      
+    });
   }, []);
 
   const handleLanguageSwitch = () => {
