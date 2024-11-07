@@ -88,7 +88,7 @@ If it is not installed, [download](https://nodejs.org/en) and install it.
 
 - [ ] Multi-language Support
     - [x] English  
-    - [ ] Spanish
+    - [X] Spanish
 
 See the [open issues](https://github.com/lalomax/Notes-app/issues) for a full list of proposed features (and known issues).
 
