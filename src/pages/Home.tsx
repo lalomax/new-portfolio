@@ -1,10 +1,18 @@
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Projects from "../components/Projects";
+import ReactGA from 'react-ga4';
 
 import Contact from "../components/Contact";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    ReactGA.initialize('G-Y8PG5EEHZM');
+    ReactGA.gtag('config', 'G-Y8PG5EEHZM', {
+      page_path: '/homepage',
+    });
+  }, []);
   return (
     <div className="dark:text-white text-primaryDark">
       <Hero />
