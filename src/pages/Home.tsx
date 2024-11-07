@@ -9,8 +9,9 @@ import { useEffect } from "react";
 const Home = () => {
   useEffect(() => {
     ReactGA.initialize('G-Y8PG5EEHZM');
-    ReactGA.gtag('config', 'G-Y8PG5EEHZM', {
-      page_path: '/homepage',
+    ReactGA.gtag('event', 'page_view', {
+      page_path: '/',
+      
     });
   }, []);
   return (
