@@ -57,7 +57,7 @@ const Hero = () => {
               <a
                 key={id}
                 href={link}
-                className="inline-block text-accent hover:text-white"
+                className="inline-block text-accent hover:text-slate-600 dark:hover:text-slate-400"
                 target="_blank"
                 aria-label={arialabel}
               >
