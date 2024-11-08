@@ -65,11 +65,11 @@ If it is not installed, [download](https://nodejs.org/en) and install it.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/lalomax/new-portfolio.git
+   git clone https://github.com/lalomax/react-portfolio.git
    ```
 1. Open directory
    ```sh
-   cd Notes-app
+   cd react-portfolio
    ```
    
 3. Install NPM packages
