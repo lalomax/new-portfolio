@@ -12,7 +12,7 @@ i18n
       en: { translation: en },
       es: { translation: es },
     },
-    lng: 'en',
+    lng: window.navigator.languages[0].includes('en') ? 'en' : 'es',
     fallbackLng: 'en',
   });
 

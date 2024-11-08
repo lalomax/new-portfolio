@@ -12,23 +12,13 @@ const Header = () => {
   const { t } = useTranslation();
   const [isDarkMode, setIsDarkMode] = useState<boolean>(!window.matchMedia("(prefers-color-scheme: dark)").matches);
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
-  const [isEnglish, setIsEnglish] = useState<boolean>(
-    window.navigator.languages[0] === "en" ? true : false
-  );
 
-  // useEffect(() => {
-  //   i18n.changeLanguage(isEnglish ? 'en' : 'es');
-  // }, [isEnglish]);
 
-  // console.log(isDarkMode)
   useEffect(() => {
-    // if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTimeout(() => {
         
         handleThemeSwitch();
-        // setIsDarkMode(true)
       }, 1000);
-    // } 
   }, []);
 
   useEffect(() => {
@@ -40,8 +30,8 @@ const Header = () => {
   }, []);
 
   const handleLanguageSwitch = () => {
-    setIsEnglish(!isEnglish);
-    i18n.changeLanguage(isEnglish ? 'en' : 'es');
+    // setIsEnglish(!isEnglish);
+    i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en');
   };
 
   const handleThemeSwitch = async () => {
@@ -109,7 +99,7 @@ const Header = () => {
               onClick={handleLanguageSwitch}
               className="bg-primaryDark text-lg p-1 rounded-md  "
             >
-              {isEnglish ? "ES" : "EN"}
+              {i18n.language === "en" ? "EN" : "ES"}
             </button>
           </li>
         </ul>
@@ -149,7 +139,7 @@ const Header = () => {
               onClick={handleLanguageSwitch}
               className="bg-primaryDark text-lg pl-4   "
             >
-              {isEnglish ? "ES" : "EN"}
+              {i18n.language === "en" ? "EN" : "ES"}
             </button>
           </li>
         </ul>
