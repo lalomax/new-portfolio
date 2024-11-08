@@ -86,7 +86,7 @@ If it is not installed, [download](https://nodejs.org/en) and install it.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Multi-language Support
+- * Multi-language Support
     - [x] English  
     - [X] Spanish
 
