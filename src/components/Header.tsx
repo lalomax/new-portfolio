@@ -41,7 +41,7 @@ const Header = () => {
         // setIsDarkMode(isDarkMode);
       });
     }).ready;
-    handleToggleMenu();
+    // handleToggleMenu();
   };
 
   useEffect(() => {
@@ -88,7 +88,7 @@ const Header = () => {
             <button
               type="button"
               onClick={handleThemeSwitch}
-              className="bg-primaryDark text-lg p-1 rounded-md  "
+              className=" text-lg p-1 rounded-md  "
             >
               {isDarkMode ? "🌙" : "☀️"}
             </button>
@@ -97,7 +97,7 @@ const Header = () => {
             <button
               type="button"
               onClick={handleLanguageSwitch}
-              className="bg-primaryDark text-lg p-1 rounded-md  "
+              className=" text-lg p-1 rounded-md  "
             >
               {i18n.language === "en" ? "EN" : "ES"}
             </button>
@@ -107,11 +107,10 @@ const Header = () => {
 
       {/* Mobile Nav */}
       <nav
-        className={
-          !toggleMenu ? "mobile-nav left-[-100%]" : "mobile-nav left-0"
-        }
+        className={`${!toggleMenu ? "mobile-nav left-[-100%]" : "mobile-nav left-0"} `}
+    
       >
-        <ul className="flex flex-col">
+        <ul className="flex flex-col  ">
           <li>
             <Link onClick={handleToggleMenu} to="/#about">{t('AboutMe')}</Link>
           </li>
@@ -127,8 +126,11 @@ const Header = () => {
           <li>
             <button
               type="button"
-              onClick={handleThemeSwitch}
-              className="bg-primaryDark text-lg pl-4 rounded-md"
+              onClick={() => {
+                handleThemeSwitch();
+                handleToggleMenu();
+              }}
+              className="text-lg pl-4 rounded-md"
             >
               {isDarkMode ? "🌙" : "🌞"}
             </button>
@@ -137,7 +139,7 @@ const Header = () => {
             <button
               type="button"
               onClick={handleLanguageSwitch}
-              className="bg-primaryDark text-lg pl-4   "
+              className="text-lg pl-4   "
             >
               {i18n.language === "en" ? "EN" : "ES"}
             </button>
