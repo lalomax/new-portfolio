@@ -22,7 +22,7 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    ReactGA.initialize('G-Y8PG5EEHZM');
+    ReactGA.initialize(import.meta.env.VITE_GA_TRACKING_ID);
     ReactGA.gtag('event', 'page_view', {
       page_path: '/',
       
